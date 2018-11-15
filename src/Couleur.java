@@ -1,3 +1,8 @@
 public enum Couleur {
-    Blanc, Gris, Violet, Jaune, Rouge, Bleu
+    Blanc,
+    Gris,
+    Violet,
+    Jaune,
+    Rouge,
+    Bleu
 }
