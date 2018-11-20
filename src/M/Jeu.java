@@ -31,6 +31,7 @@ public class Jeu{
         ImageView vaisseau = new ImageView(new Image(getClass().getResource(nom_img).toString(),100,100,false,false));
         VaisseauColon vaisseau_obj = new VaisseauColon(effet, vaisseau.getImage());
         vaisseauColonList.add(vaisseau_obj);
+        //ee
     }
 
     public void init(){
