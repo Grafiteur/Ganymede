@@ -1,3 +1,5 @@
+package M;
+
 public enum Effet {
     RecruterBlanc,
     RecruterGris,
