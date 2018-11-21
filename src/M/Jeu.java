@@ -36,12 +36,13 @@ public class Jeu{
 
     public void init(){
         int ecart = 150;
-        Collections.shuffle(vaisseauColonList);
+
         creerPaquet();
+        Collections.shuffle(vaisseauColonList);
         for(int i = 0; i<4;i++){
             gc.drawImage(vaisseauColonList.get(i).getImg_vaisseau(),getPosx(),getPosy());
-            setPosx(50);
-            setPosy(getPosx()+150);
+            setPosx(getPosx()+150);
+            setPosy(50);
         }
         primaryStage.show();
 
@@ -61,7 +62,7 @@ public class Jeu{
             create_img("2PV_type_navette_jaune.png", ImgVaisseau.deuxPV_jaune_navette_fin_tour, posx, posy);
             create_img("2PV_type_navette_violet.png", ImgVaisseau.deuxPV_violet_navette_fin_tour, posx , posy);
             create_img("4PV_1colon_terre.png", ImgVaisseau.quatre_pv_recruter_colon_terre, posx, posy);
-            create_img("4PV_2tranfers.png", ImgVaisseau.quatre_pv_plus_deux_transfers, posx, posy);
+            create_img("4PV_2transfers.png", ImgVaisseau.quatre_pv_plus_deux_transfers, posx, posy);
             create_img("4PV_moins1.png", ImgVaisseau.quatre_pv_moins_un_colon_por_decole, posx, posy);
             create_img("4PV_reput_plus_1.png", ImgVaisseau.quatre_pv_plus_un_reput, posx , posy);
             create_img("6PV.png", ImgVaisseau.six_pv_si_utiliser_au_moins_une_navette_de_chaque, posx, posy);
