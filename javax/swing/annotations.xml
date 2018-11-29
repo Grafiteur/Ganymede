@@ -1,0 +1,5 @@
+<root>
+    <item name='javax.swing.BoxLayout'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>
