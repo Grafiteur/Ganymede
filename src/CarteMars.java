@@ -13,7 +13,7 @@ public class CarteMars extends JButton {
         this.actionMars = actionMars;
         ImageIcon img = new ImageIcon(chemin);
         this.setIcon(img);
-        setPreferredSize(new Dimension(50,75));
+        setPreferredSize(new Dimension(55,75));
     }
 
     public Couleur getCouleur() {

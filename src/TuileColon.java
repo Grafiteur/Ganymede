@@ -11,7 +11,7 @@ public class TuileColon extends JButton {
         this.couleur = couleur;
         ImageIcon img = new ImageIcon(chemin);
         this.setIcon(img);
-        setPreferredSize(new Dimension(100,50));
+        setPreferredSize(new Dimension(100,60));
     }
 
     public EffetTuile getEffetTuile() {
