@@ -5,6 +5,7 @@ public class ControlTerre extends Control1 implements ActionListener {
 
     public ControlTerre(Model model, Vue vue) {
         super(model, vue);
+        vue.setButtonController3(this);
     }
 
     @Override

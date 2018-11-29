@@ -170,40 +170,40 @@ public class Vue extends JFrame {
             tuileColonList.add(tuile30);
             Collections.shuffle(tuileColonList);
 
-            CarteTerre terre1 = new CarteTerre(null,null,null,Couleur.BLANC);
-            CarteTerre terre2 = new CarteTerre(null,null,null,Couleur.BLANC);
-            CarteTerre terre3 = new CarteTerre(null,null,null,Couleur.BLANC);
-            CarteTerre terre4 = new CarteTerre(null,null,null,Couleur.BLANC);
-            CarteTerre terre5 = new CarteTerre(null,null,null,Couleur.BLANC);
-            CarteTerre terre6 = new CarteTerre(null,null,null,Couleur.BLANC);
+            CarteTerre terre1 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/colon_violet_reput_type_blanc.png",ActionTerre.reput,DeplacementColonTerre.colon_violet,Couleur.BLANC);
+            CarteTerre terre2 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/colon_type_blanc.png",null,DeplacementColonTerre.colon,Couleur.BLANC);
+            CarteTerre terre3 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/colon_jaune_transfert_type_blanc.png",ActionTerre.transfert,DeplacementColonTerre.colon_jaune,Couleur.BLANC);
+            CarteTerre terre4 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/colon_bleu_recrute_bleu_type_blanc.png",ActionTerre.recrute_bleu,DeplacementColonTerre.colon_bleu,Couleur.BLANC);
+            CarteTerre terre5 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/colon_rouge_echnage_rouge_type_blanc.png",ActionTerre.echange_avec_rouge,DeplacementColonTerre.colon_rouge,Couleur.BLANC);
+            CarteTerre terre6 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/colon_defausse_tuile_decole_type_blanc.png",ActionTerre.decole,DeplacementColonTerre.colon_defausse_tuile,Couleur.BLANC);
 
-            CarteTerre terre7 = new CarteTerre(null,null,null,Couleur.BLEU);
-            CarteTerre terre8 = new CarteTerre(null,null,null,Couleur.BLEU);
-            CarteTerre terre9 = new CarteTerre(null,null,null,Couleur.BLEU);
-            CarteTerre terre10 = new CarteTerre(null,null,null,Couleur.BLEU);
-            CarteTerre terre11 = new CarteTerre(null,null,null,Couleur.BLEU);
-            CarteTerre terre12 = new CarteTerre(null,null,null,Couleur.BLEU);
+            CarteTerre terre7 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/bleu_violet_reput_type_bleu.png",ActionTerre.reput,DeplacementColonTerre.violet_bleu,Couleur.BLEU);
+            CarteTerre terre8 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/bleu_type_bleu.png",null,DeplacementColonTerre.bleu,Couleur.BLEU);
+            CarteTerre terre9 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/bleu_jaune_transfert_type_bleu.png",ActionTerre.transfert,DeplacementColonTerre.bleu_jaune,Couleur.BLEU);
+            CarteTerre terre10 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/deux_bleu_recrute_colon_type_bleu.png",ActionTerre.recrute_colon,DeplacementColonTerre.deux_bleu,Couleur.BLEU);
+            CarteTerre terre11 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/bleu_rouge_echnage_jaune_type_bleu.png",ActionTerre.echnage_avec_jaune,DeplacementColonTerre.bleu_rouge,Couleur.BLEU);
+            CarteTerre terre12 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/bleu_defausse_tuile_recurte_colon_type_bleu.png",ActionTerre.recrute_colon,DeplacementColonTerre.bleu_defausse_tuile,Couleur.BLEU);
 
-            CarteTerre terre13 = new CarteTerre(null,null,null,Couleur.ROUGE);
-            CarteTerre terre14 = new CarteTerre(null,null,null,Couleur.ROUGE);
-            CarteTerre terre15 = new CarteTerre(null,null,null,Couleur.ROUGE);
-            CarteTerre terre16 = new CarteTerre(null,null,null,Couleur.ROUGE);
-            CarteTerre terre17 = new CarteTerre(null,null,null,Couleur.ROUGE);
-            CarteTerre terre18 = new CarteTerre(null,null,null,Couleur.ROUGE);
+            CarteTerre terre13 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/rouge_violet_reput_type_rouge.png",ActionTerre.reput,DeplacementColonTerre.violet_rouge,Couleur.ROUGE);
+            CarteTerre terre14 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/rouge_type_rouge.png",null,DeplacementColonTerre.rouge,Couleur.ROUGE);
+            CarteTerre terre15 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/rouge_jaune_transfert_type_rouge.png",ActionTerre.transfert,DeplacementColonTerre.rouge_jaune,Couleur.ROUGE);
+            CarteTerre terre16 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/rouge_bleu_echnage_violet_type_rouge.png",ActionTerre.recrute_violet,DeplacementColonTerre.rouge_bleu,Couleur.ROUGE);
+            CarteTerre terre17 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/deux_rouge_echange_colon_type_rouge.png",ActionTerre.echange_avec_colon,DeplacementColonTerre.deux_rouge,Couleur.ROUGE);
+            CarteTerre terre18 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/rouge_defausse_tuile_echnage_colon_type_rouge.png",ActionTerre.echange_avec_colon,DeplacementColonTerre.rouge_defausse_tuile,Couleur.ROUGE);
 
-            CarteTerre terre19 = new CarteTerre(null,null,null,Couleur.VIOLET);
-            CarteTerre terre20 = new CarteTerre(null,null,null,Couleur.VIOLET);
-            CarteTerre terre21 = new CarteTerre(null,null,null,Couleur.VIOLET);
-            CarteTerre terre22 = new CarteTerre(null,null,null,Couleur.VIOLET);
-            CarteTerre terre23 = new CarteTerre(null,null,null,Couleur.VIOLET);
-            CarteTerre terre24 = new CarteTerre(null,null,null,Couleur.VIOLET);
+            CarteTerre terre19 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/deux_violet_reput_type_violet.png",ActionTerre.reput,DeplacementColonTerre.deux_violet,Couleur.VIOLET);
+            CarteTerre terre20 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/violet_type_violet.png",null,DeplacementColonTerre.violet,Couleur.VIOLET);
+            CarteTerre terre21 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/violet_jaune_transfert_type_violet.png",ActionTerre.transfert,DeplacementColonTerre.violet_jaune,Couleur.VIOLET);
+            CarteTerre terre22 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/violet_bleu_echange_jaune_type_violet.png",ActionTerre.recrute_jaune,DeplacementColonTerre.violet_bleu,Couleur.VIOLET);
+            CarteTerre terre23 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/violet_rouge_echange_bleu_type_violet.png",ActionTerre.echnage_avec_bleu,DeplacementColonTerre.violet_rouge,Couleur.VIOLET);
+            CarteTerre terre24 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/violet_defausse_tuile_reput__type_violet.png",ActionTerre.reput,DeplacementColonTerre.violet_defausse_tuile,Couleur.VIOLET);
 
-            CarteTerre terre25 = new CarteTerre(null,null,null,Couleur.JAUNE);
-            CarteTerre terre26 = new CarteTerre(null,null,null,Couleur.JAUNE);
-            CarteTerre terre27 = new CarteTerre(null,null,null,Couleur.JAUNE);
-            CarteTerre terre28 = new CarteTerre(null,null,null,Couleur.JAUNE);
-            CarteTerre terre29 = new CarteTerre(null,null,null,Couleur.JAUNE);
-            CarteTerre terre30 = new CarteTerre(null,null,null,Couleur.JAUNE);
+            CarteTerre terre25 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/jaune_violet_reput_type_jaune.png",ActionTerre.reput,DeplacementColonTerre.violet_jaune,Couleur.JAUNE);
+            CarteTerre terre26 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/jaune_type_jaune.png",null,DeplacementColonTerre.jaune,Couleur.JAUNE);
+            CarteTerre terre27 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/deux_juane_transfert_type_jaune.png",ActionTerre.transfert,DeplacementColonTerre.deux_jaune,Couleur.JAUNE);
+            CarteTerre terre28 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/jaune_bleu_recrute_rouge_type_jaune.png",ActionTerre.recrute_rouge,DeplacementColonTerre.jaune_bleu,Couleur.JAUNE);
+            CarteTerre terre29 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/jaune_rouge_echnage_violet_type_jaune.png",ActionTerre.echange_avec_violet,DeplacementColonTerre.jaune_rouge,Couleur.JAUNE);
+            CarteTerre terre30 = new CarteTerre("D:/Ganymede_tirerCarte/src/img/terre/jaune_defausse_tuile_transfert_type_jaune.png",ActionTerre.transfert,DeplacementColonTerre.jaune_defausse_tuile,Couleur.JAUNE);
 
             carteTerreList.add(terre1);
             carteTerreList.add(terre2);

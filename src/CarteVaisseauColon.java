@@ -13,7 +13,7 @@ public class CarteVaisseauColon extends JButton {
         ImageIcon img = new ImageIcon(chemin);
         this.setIcon(img);
         this.effet = ef;
-        setPreferredSize(new Dimension(85,50));
+        setPreferredSize(new Dimension(75,50));
 
     }
 
