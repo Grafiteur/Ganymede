@@ -6,7 +6,7 @@ public class TuileColon extends JButton {
     private EffetTuile effetTuile;
     private Couleur couleur;
 
-    public TuileColon(EffetTuile effetTuile, Couleur couleur ,String chemin){
+    public TuileColon(EffetTuile effetTuile, Couleur couleur , String chemin){
         this.effetTuile = effetTuile;
         this.couleur = couleur;
         ImageIcon img = new ImageIcon(chemin);
