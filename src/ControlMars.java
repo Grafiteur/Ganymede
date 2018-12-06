@@ -58,14 +58,13 @@ public class ControlMars extends Control1 implements ActionListener {
                 Mars1.setDeplacementColonMars(vue.getCarteMarsList().get(0).getDeplacementColonMars());
                 System.out.println("bouton4");
             }
-        }
-        else {
+        } else {
 
             if (e.getSource() == vue.getBoardMarsList().get(0)) {
-                if(vue.getCarteMarsList().size() == 0
+                if (vue.getCarteMarsList().size() == 0
                         && vue.getBoardMarsList().get(1).getCouleur() == null
                         && vue.getBoardMarsList().get(2).getCouleur() == null
-                        && vue.getBoardMarsList().get(3).getCouleur() == null){
+                        && vue.getBoardMarsList().get(3).getCouleur() == null) {
                     CarteMars Mars1 = vue.getBoardMarsList().get(0);
                     vue.getMainMarsList().add(Mars1);
                     Mars1.setIcon(null);
@@ -74,10 +73,10 @@ public class ControlMars extends Control1 implements ActionListener {
                     Mars1.setDeplacementColonMars(null);
                     model.finDePartie(vue);
                 }
-                if(vue.getCarteMarsList().size() == 0 && vue.getBoardMarsList().get(0).getCouleur() == null){
+                if (vue.getCarteMarsList().size() == 0 && vue.getBoardMarsList().get(0).getCouleur() == null) {
                     vue.creerDialogInfMars("vous ne pouvez plus tirer de carte Mars sur ce bouton");
 
-                }else {
+                } else {
                     CarteMars Mars1 = vue.getBoardMarsList().get(0);
                     if (vue.getCarteMarsList().size() != 0) {
                         vue.getCarteMarsList().remove(0);
@@ -86,7 +85,7 @@ public class ControlMars extends Control1 implements ActionListener {
                         Mars1.setActionMars(null);
                         Mars1.setCouleur(null);
                         Mars1.setDeplacementColonMars(null);
-                    }else {
+                    } else {
                         vue.getMainMarsList().add(Mars1);
                         Mars1.setIcon(null);
                         Mars1.setActionMars(null);
@@ -96,110 +95,107 @@ public class ControlMars extends Control1 implements ActionListener {
                 }
             }
             System.out.println(vue.getCarteMarsList().size());
-        }
 
-        if (e.getSource() == vue.getBoardMarsList().get(1)) {
-            if(vue.getCarteMarsList().size() == 0
-                    && vue.getBoardMarsList().get(0).getCouleur() == null
-                    && vue.getBoardMarsList().get(2).getCouleur() == null
-                    && vue.getBoardMarsList().get(3).getCouleur() == null){
-                CarteMars Mars1 = vue.getBoardMarsList().get(1);
-                vue.getMainMarsList().add(Mars1);
-                Mars1.setIcon(null);
-                Mars1.setActionMars(null);
-                Mars1.setCouleur(null);
-                Mars1.setDeplacementColonMars(null);
-                model.finDePartie(vue);
-                model.finDePartie(vue);
-            }
-            if(vue.getCarteMarsList().size() == 0 && vue.getBoardMarsList().get(1).getCouleur() == null){
-                vue.creerDialogInfMars("vous ne pouvez plus tirer de carte Mars sur ce bouton");
-            }else {
-                CarteMars Mars1 = vue.getBoardMarsList().get(1);
-                if (vue.getCarteMarsList().size() != 0) {
-                    vue.getCarteMarsList().remove(0);
+            if (e.getSource() == vue.getBoardMarsList().get(1)) {
+                if (vue.getCarteMarsList().size() == 0
+                        && vue.getBoardMarsList().get(0).getCouleur() == null
+                        && vue.getBoardMarsList().get(2).getCouleur() == null
+                        && vue.getBoardMarsList().get(3).getCouleur() == null) {
+                    CarteMars Mars1 = vue.getBoardMarsList().get(1);
                     vue.getMainMarsList().add(Mars1);
                     Mars1.setIcon(null);
                     Mars1.setActionMars(null);
                     Mars1.setCouleur(null);
                     Mars1.setDeplacementColonMars(null);
-                }else {
-                    vue.getMainMarsList().add(Mars1);
-                    Mars1.setIcon(null);
-                    Mars1.setActionMars(null);
-                    Mars1.setCouleur(null);
-                    Mars1.setDeplacementColonMars(null);
+                    model.finDePartie(vue);
+                    model.finDePartie(vue);
                 }
-            }
-        }
-
-        else if (e.getSource() == vue.getBoardMarsList().get(2)) {
-            if(vue.getCarteMarsList().size() == 0
-                    && vue.getBoardMarsList().get(0).getCouleur() == null
-                    && vue.getBoardMarsList().get(1).getCouleur() == null
-                    && vue.getBoardMarsList().get(3).getCouleur() == null){
-                CarteMars Mars1 = vue.getBoardMarsList().get(2);
-                vue.getMainMarsList().add(Mars1);
-                Mars1.setIcon(null);
-                Mars1.setActionMars(null);
-                Mars1.setCouleur(null);
-                Mars1.setDeplacementColonMars(null);
-                model.finDePartie(vue);
-                model.finDePartie(vue);
-            }
-            if(vue.getCarteMarsList().size() == 0 && vue.getBoardMarsList().get(2).getCouleur() == null){
-                vue.creerDialogInfMars("vous ne pouvez plus tirer de carte Mars sur ce bouton");
-            }else {
-                CarteMars Mars1 = vue.getBoardMarsList().get(2);
-                if (vue.getCarteMarsList().size() != 0) {
-
-                    vue.getCarteMarsList().remove(0);
-                    vue.getMainMarsList().add(Mars1);
-                    Mars1.setIcon(null);
-                    Mars1.setActionMars(null);
-                    Mars1.setCouleur(null);
-                    Mars1.setDeplacementColonMars(null);
-                }else {
-                    vue.getMainMarsList().add(Mars1);
-                    Mars1.setIcon(null);
-                    Mars1.setActionMars(null);
-                    Mars1.setCouleur(null);
-                    Mars1.setDeplacementColonMars(null);
+                if (vue.getCarteMarsList().size() == 0 && vue.getBoardMarsList().get(1).getCouleur() == null) {
+                    vue.creerDialogInfMars("vous ne pouvez plus tirer de carte Mars sur ce bouton");
+                } else {
+                    CarteMars Mars1 = vue.getBoardMarsList().get(1);
+                    if (vue.getCarteMarsList().size() != 0) {
+                        vue.getCarteMarsList().remove(0);
+                        vue.getMainMarsList().add(Mars1);
+                        Mars1.setIcon(null);
+                        Mars1.setActionMars(null);
+                        Mars1.setCouleur(null);
+                        Mars1.setDeplacementColonMars(null);
+                    } else {
+                        vue.getMainMarsList().add(Mars1);
+                        Mars1.setIcon(null);
+                        Mars1.setActionMars(null);
+                        Mars1.setCouleur(null);
+                        Mars1.setDeplacementColonMars(null);
+                    }
                 }
-            }
-
-        }
-        else if (e.getSource() == vue.getBoardMarsList().get(3)) {
-            if(vue.getCarteMarsList().size() == 0
-                    && vue.getBoardMarsList().get(0).getCouleur() == null
-                    && vue.getBoardMarsList().get(1).getCouleur() == null
-                    && vue.getBoardMarsList().get(2).getCouleur() == null){
-                CarteMars Mars1 = vue.getBoardMarsList().get(3);
-                vue.getMainMarsList().add(Mars1);
-                Mars1.setIcon(null);
-                Mars1.setActionMars(null);
-                Mars1.setCouleur(null);
-                Mars1.setDeplacementColonMars(null);
-                model.finDePartie(vue);
-            }
-            if(vue.getCarteMarsList().size() == 0 && vue.getBoardMarsList().get(3).getCouleur() == null){
-                vue.creerDialogInfMars("vous ne pouvez plus tirer de carte Mars sur ce bouton");
-            }else {
-                CarteMars Mars1 = vue.getBoardMarsList().get(3);
-                if (vue.getCarteMarsList().size() != 0) {
-
-                    vue.getCarteMarsList().remove(0);
+            } else if (e.getSource() == vue.getBoardMarsList().get(2)) {
+                if (vue.getCarteMarsList().size() == 0
+                        && vue.getBoardMarsList().get(0).getCouleur() == null
+                        && vue.getBoardMarsList().get(1).getCouleur() == null
+                        && vue.getBoardMarsList().get(3).getCouleur() == null) {
+                    CarteMars Mars1 = vue.getBoardMarsList().get(2);
                     vue.getMainMarsList().add(Mars1);
                     Mars1.setIcon(null);
                     Mars1.setActionMars(null);
                     Mars1.setCouleur(null);
                     Mars1.setDeplacementColonMars(null);
-                }else {
+                    model.finDePartie(vue);
+                    model.finDePartie(vue);
+                }
+                if (vue.getCarteMarsList().size() == 0 && vue.getBoardMarsList().get(2).getCouleur() == null) {
+                    vue.creerDialogInfMars("vous ne pouvez plus tirer de carte Mars sur ce bouton");
+                } else {
+                    CarteMars Mars1 = vue.getBoardMarsList().get(2);
+                    if (vue.getCarteMarsList().size() != 0) {
+
+                        vue.getCarteMarsList().remove(0);
+                        vue.getMainMarsList().add(Mars1);
+                        Mars1.setIcon(null);
+                        Mars1.setActionMars(null);
+                        Mars1.setCouleur(null);
+                        Mars1.setDeplacementColonMars(null);
+                    } else {
+                        vue.getMainMarsList().add(Mars1);
+                        Mars1.setIcon(null);
+                        Mars1.setActionMars(null);
+                        Mars1.setCouleur(null);
+                        Mars1.setDeplacementColonMars(null);
+                    }
+                }
+
+            } else if (e.getSource() == vue.getBoardMarsList().get(3)) {
+                if (vue.getCarteMarsList().size() == 0
+                        && vue.getBoardMarsList().get(0).getCouleur() == null
+                        && vue.getBoardMarsList().get(1).getCouleur() == null
+                        && vue.getBoardMarsList().get(2).getCouleur() == null) {
+                    CarteMars Mars1 = vue.getBoardMarsList().get(3);
                     vue.getMainMarsList().add(Mars1);
                     Mars1.setIcon(null);
                     Mars1.setActionMars(null);
                     Mars1.setCouleur(null);
                     Mars1.setDeplacementColonMars(null);
+                    model.finDePartie(vue);
+                }
+                if (vue.getCarteMarsList().size() == 0 && vue.getBoardMarsList().get(3).getCouleur() == null) {
+                    vue.creerDialogInfMars("vous ne pouvez plus tirer de carte Mars sur ce bouton");
+                } else {
+                    CarteMars Mars1 = vue.getBoardMarsList().get(3);
+                    if (vue.getCarteMarsList().size() != 0) {
+
+                        vue.getCarteMarsList().remove(0);
+                        vue.getMainMarsList().add(Mars1);
+                        Mars1.setIcon(null);
+                        Mars1.setActionMars(null);
+                        Mars1.setCouleur(null);
+                        Mars1.setDeplacementColonMars(null);
+                    } else {
+                        vue.getMainMarsList().add(Mars1);
+                        Mars1.setIcon(null);
+                        Mars1.setActionMars(null);
+                        Mars1.setCouleur(null);
+                        Mars1.setDeplacementColonMars(null);
+                    }
                 }
             }
         }

@@ -7,6 +7,7 @@ public class ControlTerre extends Control1 implements ActionListener {
         super(model, vue);
         vue.setButtonController3(this);
     }
+
     @Override
     public void actionPerformed(ActionEvent e) {
 
@@ -21,13 +22,14 @@ public class ControlTerre extends Control1 implements ActionListener {
                 Terre1.setCouleur(vue.getCarteTerreList().get(0).getCouleur());
                 Terre1.setDeplacementColonTerre(vue.getCarteTerreList().get(0).getDeplacementColonTerre());
 
-
                 System.out.println("bouton1");
                 System.out.println(vue.getCarteTerreList().get(0).getCouleur());
                 System.out.println(vue.getCarteTerreList().size());
                 System.out.println(vue.getMainTerreList().get(vue.getMainTerreList().size() - 1).getCouleur());
 
-            } else if (e.getSource() == vue.getBoardTerreList().get(1)) {
+            }
+            if (e.getSource() == vue.getBoardTerreList().get(1)) {
+
                 vue.getMainTerreList().add(vue.getBoardTerreList().get(1));
                 CarteTerre Terre1 = vue.getBoardTerreList().get(1);
                 vue.getCarteTerreList().remove(0);
@@ -57,14 +59,13 @@ public class ControlTerre extends Control1 implements ActionListener {
                 Terre1.setDeplacementColonTerre(vue.getCarteTerreList().get(0).getDeplacementColonTerre());
                 System.out.println("bouton4");
             }
-        }
-        else {
+        } else {
 
             if (e.getSource() == vue.getBoardTerreList().get(0)) {
-                if(vue.getCarteTerreList().size() == 0
+                if (vue.getCarteTerreList().size() == 0
                         && vue.getBoardTerreList().get(1).getCouleur() == null
                         && vue.getBoardTerreList().get(2).getCouleur() == null
-                        && vue.getBoardTerreList().get(3).getCouleur() == null){
+                        && vue.getBoardTerreList().get(3).getCouleur() == null) {
                     CarteTerre Terre1 = vue.getBoardTerreList().get(0);
                     vue.getMainTerreList().add(Terre1);
                     Terre1.setIcon(null);
@@ -73,10 +74,10 @@ public class ControlTerre extends Control1 implements ActionListener {
                     Terre1.setDeplacementColonTerre(null);
                     model.finDePartie(vue);
                 }
-                if(vue.getCarteTerreList().size() == 0 && vue.getBoardTerreList().get(0).getCouleur() == null){
+                if (vue.getCarteTerreList().size() == 0 && vue.getBoardTerreList().get(0).getCouleur() == null) {
                     vue.creerDialogInfTerre("vous ne pouvez plus tirer de carte Terre sur ce bouton");
 
-                }else {
+                } else {
                     CarteTerre Terre1 = vue.getBoardTerreList().get(0);
                     if (vue.getCarteTerreList().size() != 0) {
                         vue.getCarteTerreList().remove(0);
@@ -85,23 +86,22 @@ public class ControlTerre extends Control1 implements ActionListener {
                         Terre1.setActionTerre(null);
                         Terre1.setCouleur(null);
                         Terre1.setDeplacementColonTerre(null);
-                    }else {
+                    } else {
                         vue.getMainTerreList().add(Terre1);
                         Terre1.setIcon(null);
                         Terre1.setActionTerre(null);
                         Terre1.setCouleur(null);
                         Terre1.setDeplacementColonTerre(null);
                     }
-                    }
                 }
-                System.out.println(vue.getCarteTerreList().size());
             }
+            System.out.println(vue.getCarteTerreList().size());
 
             if (e.getSource() == vue.getBoardTerreList().get(1)) {
-                if(vue.getCarteTerreList().size() == 0
+                if (vue.getCarteTerreList().size() == 0
                         && vue.getBoardTerreList().get(0).getCouleur() == null
                         && vue.getBoardTerreList().get(2).getCouleur() == null
-                        && vue.getBoardTerreList().get(3).getCouleur() == null){
+                        && vue.getBoardTerreList().get(3).getCouleur() == null) {
                     CarteTerre Terre1 = vue.getBoardTerreList().get(1);
                     vue.getMainTerreList().add(Terre1);
                     Terre1.setIcon(null);
@@ -111,9 +111,9 @@ public class ControlTerre extends Control1 implements ActionListener {
                     model.finDePartie(vue);
                     model.finDePartie(vue);
                 }
-                if(vue.getCarteTerreList().size() == 0 && vue.getBoardTerreList().get(1).getCouleur() == null){
+                if (vue.getCarteTerreList().size() == 0 && vue.getBoardTerreList().get(1).getCouleur() == null) {
                     vue.creerDialogInfTerre("vous ne pouvez plus tirer de carte Terre sur ce bouton");
-                }else {
+                } else {
                     CarteTerre Terre1 = vue.getBoardTerreList().get(1);
                     if (vue.getCarteTerreList().size() != 0) {
                         vue.getCarteTerreList().remove(0);
@@ -122,7 +122,7 @@ public class ControlTerre extends Control1 implements ActionListener {
                         Terre1.setActionTerre(null);
                         Terre1.setCouleur(null);
                         Terre1.setDeplacementColonTerre(null);
-                    }else {
+                    } else {
                         vue.getMainTerreList().add(Terre1);
                         Terre1.setIcon(null);
                         Terre1.setActionTerre(null);
@@ -130,25 +130,23 @@ public class ControlTerre extends Control1 implements ActionListener {
                         Terre1.setDeplacementColonTerre(null);
                     }
                 }
-            }
-
-            else if (e.getSource() == vue.getBoardTerreList().get(2)) {
-                    if(vue.getCarteTerreList().size() == 0
+            } else if (e.getSource() == vue.getBoardTerreList().get(2)) {
+                if (vue.getCarteTerreList().size() == 0
                         && vue.getBoardTerreList().get(0).getCouleur() == null
                         && vue.getBoardTerreList().get(1).getCouleur() == null
-                        && vue.getBoardTerreList().get(3).getCouleur() == null){
-                        CarteTerre Terre1 = vue.getBoardTerreList().get(2);
-                        vue.getMainTerreList().add(Terre1);
-                        Terre1.setIcon(null);
-                        Terre1.setActionTerre(null);
-                        Terre1.setCouleur(null);
-                        Terre1.setDeplacementColonTerre(null);
-                        model.finDePartie(vue);
+                        && vue.getBoardTerreList().get(3).getCouleur() == null) {
+                    CarteTerre Terre1 = vue.getBoardTerreList().get(2);
+                    vue.getMainTerreList().add(Terre1);
+                    Terre1.setIcon(null);
+                    Terre1.setActionTerre(null);
+                    Terre1.setCouleur(null);
+                    Terre1.setDeplacementColonTerre(null);
+                    model.finDePartie(vue);
                     model.finDePartie(vue);
                 }
-                if(vue.getCarteTerreList().size() == 0 && vue.getBoardTerreList().get(2).getCouleur() == null){
+                if (vue.getCarteTerreList().size() == 0 && vue.getBoardTerreList().get(2).getCouleur() == null) {
                     vue.creerDialogInfTerre("vous ne pouvez plus tirer de carte Terre sur ce bouton");
-                }else {
+                } else {
                     CarteTerre Terre1 = vue.getBoardTerreList().get(2);
                     if (vue.getCarteTerreList().size() != 0) {
 
@@ -158,7 +156,7 @@ public class ControlTerre extends Control1 implements ActionListener {
                         Terre1.setActionTerre(null);
                         Terre1.setCouleur(null);
                         Terre1.setDeplacementColonTerre(null);
-                    }else {
+                    } else {
                         vue.getMainTerreList().add(Terre1);
                         Terre1.setIcon(null);
                         Terre1.setActionTerre(null);
@@ -167,12 +165,11 @@ public class ControlTerre extends Control1 implements ActionListener {
                     }
                 }
 
-            }
-            else if (e.getSource() == vue.getBoardTerreList().get(3)) {
-                if(vue.getCarteTerreList().size() == 0
+            } else if (e.getSource() == vue.getBoardTerreList().get(3)) {
+                if (vue.getCarteTerreList().size() == 0
                         && vue.getBoardTerreList().get(0).getCouleur() == null
                         && vue.getBoardTerreList().get(1).getCouleur() == null
-                        && vue.getBoardTerreList().get(2).getCouleur() == null){
+                        && vue.getBoardTerreList().get(2).getCouleur() == null) {
                     CarteTerre Terre1 = vue.getBoardTerreList().get(3);
                     vue.getMainTerreList().add(Terre1);
                     Terre1.setIcon(null);
@@ -181,9 +178,9 @@ public class ControlTerre extends Control1 implements ActionListener {
                     Terre1.setDeplacementColonTerre(null);
                     model.finDePartie(vue);
                 }
-                if(vue.getCarteTerreList().size() == 0 && vue.getBoardTerreList().get(3).getCouleur() == null){
+                if (vue.getCarteTerreList().size() == 0 && vue.getBoardTerreList().get(3).getCouleur() == null) {
                     vue.creerDialogInfTerre("vous ne pouvez plus tirer de carte Terre sur ce bouton");
-                }else {
+                } else {
                     CarteTerre Terre1 = vue.getBoardTerreList().get(3);
                     if (vue.getCarteTerreList().size() != 0) {
 
@@ -193,7 +190,7 @@ public class ControlTerre extends Control1 implements ActionListener {
                         Terre1.setActionTerre(null);
                         Terre1.setCouleur(null);
                         Terre1.setDeplacementColonTerre(null);
-                    }else {
+                    } else {
                         vue.getMainTerreList().add(Terre1);
                         Terre1.setIcon(null);
                         Terre1.setActionTerre(null);
@@ -204,4 +201,4 @@ public class ControlTerre extends Control1 implements ActionListener {
             }
         }
     }
-
+}

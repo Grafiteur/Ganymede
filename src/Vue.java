@@ -113,6 +113,8 @@ public class Vue extends JFrame {
             vaisseauColonList.add(carte16);
             Collections.shuffle(vaisseauColonList);
         }
+
+        for (int j = 0; j < 2 ; j++){
             TuileColon tuile1 = new TuileColon(EffetTuile.transfert_ou_recrute_jaune_type_blanc, Couleur.BLANC,"C:/Users/simon/Desktop/Ganymede/src/img/Tuile/transfert_ou_recrute_jaune_type_blanc.png");
             TuileColon tuile2 = new TuileColon(EffetTuile.recrute_bleu_ou_violet_type_violet, Couleur.BLANC,"C:/Users/simon/Desktop/Ganymede/src/img/Tuile/recrute_bleu_ou_violet_type_violet.png");
             TuileColon tuile3 = new TuileColon(EffetTuile.transfert_ou_recrute_violet_type_blanc, Couleur.BLANC,"C:/Users/simon/Desktop/Ganymede/src/img/Tuile/transfert_ou_recrute_violet_type_blanc.png");
@@ -248,7 +250,7 @@ public class Vue extends JFrame {
             Collections.shuffle(carteTerreList);
 
 
-
+        }
 
         CarteMars mars1 = new CarteMars("C:/Users/simon/Desktop/Ganymede/src/img/mars/deplace_colon_bleu_defausse_tuile_recrute_colon_type_blanc.jpg", ActionMars.recrute_colon, DeplacementColonMars.deplace_colon_bleu_defausse_tuile, Couleur.BLANC);
         CarteMars mars2 = new CarteMars("C:/Users/simon/Desktop/Ganymede/src/img/mars/deplace_colon_bleu_violet_reput_type_blanc.jpg", ActionMars.reput, DeplacementColonMars.deplace_colon_bleu_violet, Couleur.BLANC);
